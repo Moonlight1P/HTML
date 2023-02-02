@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    
+}
+.logo{
+    cursor: pointer;
+    font-size: 35px;
+    color: #C147E9;
+}
+span{
+    color: black;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li a:hover{
+    color:#FF8E9E;
+    transition: 0.7s;
+}
+
+.newslatter form{
+    padding-left: 100px;
+    padding-top: 20px;
+	width: 200px;
+	max-width: 100%;
+	position: relative;
+}
+
+.newslatter form input:first-child{
+    width: 100%;
+	padding: 14px 100px 14px 15px;
+	border: 2px solid #C147E9;
+	outline: none;
+	border-radius: 30px;
+}
+
+
+.newslatter form input:last-child{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    
+    outline: none;
+	border: none;
+	padding: 10px 30px; 
+    border-radius: 30px;
+	background-color:#A555EC;
+	color: white;
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+
+.new{
+    padding-left: 100px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.crow{
+    padding-bottom: 20px;
+    color: #C147E9;
+    font-size: 20px;
+}
+.crow1{
+    padding-top: 20px;
+    color: #C147E9;
+    font-size: 20px;
+}
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg");
+    background-size: cover;
+}
+#btn-btn{
+    color: #C0DEFF;
+    background-color: #C147E9;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+
+
