@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/yourusername/yourrepository.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // You can add build steps here if needed
+            }
+        }
+
+        stage('Deploy to XAMPP') {
+            steps {
+                // Copy the HTML files to XAMPP htdocs directory
+                bat 'xcopy /E /Y .\\*.html "C:\\xampp\\htdocs\\"'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment successful!'
+        }
+        failure {
+            echo 'Deployment failed!'
+        }
+    }
+}
